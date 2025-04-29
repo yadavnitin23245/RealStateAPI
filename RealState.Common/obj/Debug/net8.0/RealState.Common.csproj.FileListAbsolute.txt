@@ -1,0 +1,11 @@
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\bin\Debug\net8.0\RealState.Common.deps.json
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\bin\Debug\net8.0\RealState.Common.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\bin\Debug\net8.0\RealState.Common.pdb
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState.Common.AssemblyInfoInputs.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState.Common.AssemblyInfo.cs
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState.Common.csproj.CoreCompileInputs.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState.Common.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\refint\RealState.Common.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState.Common.pdb
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\ref\RealState.Common.dll

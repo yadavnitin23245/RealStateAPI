@@ -1,0 +1,24 @@
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\bin\Debug\net8.0\RealState.Data.deps.json
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\bin\Debug\net8.0\RealState.Data.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\bin\Debug\net8.0\RealState.Data.pdb
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\RealState.Data.csproj.AssemblyReference.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\RealState.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\RealState.Data.AssemblyInfoInputs.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\RealState.Data.AssemblyInfo.cs
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\RealState.Data.csproj.CoreCompileInputs.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\RealState.Data.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\refint\RealState.Data.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\RealState.Data.pdb
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Data\obj\Debug\net8.0\ref\RealState.Data.dll
+D:\RealEsitate\API\RealState.Data\bin\Debug\net8.0\RealState.Data.deps.json
+D:\RealEsitate\API\RealState.Data\bin\Debug\net8.0\RealState.Data.dll
+D:\RealEsitate\API\RealState.Data\bin\Debug\net8.0\RealState.Data.pdb
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.csproj.AssemblyReference.cache
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.AssemblyInfoInputs.cache
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.AssemblyInfo.cs
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.csproj.CoreCompileInputs.cache
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.dll
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\refint\RealState.Data.dll
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.pdb
+D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\ref\RealState.Data.dll

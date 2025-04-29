@@ -1,0 +1,34 @@
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\bin\Debug\net8.0\RealState.Repository.deps.json
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\bin\Debug\net8.0\RealState.Repository.runtimeconfig.json
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\bin\Debug\net8.0\RealState.Repository.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\bin\Debug\net8.0\RealState.Repository.pdb
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\bin\Debug\net8.0\RealState.Data.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\bin\Debug\net8.0\RealState.Data.pdb
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.csproj.AssemblyReference.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.AssemblyInfoInputs.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.AssemblyInfo.cs
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealStat.7E5EFE90.Up2Date
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\refint\RealState.Repository.dll
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.pdb
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\RealState.Repository.genruntimeconfig.cache
+C:\Users\Pankaj Sadiyal\source\repos\RealState.Repository\obj\Debug\net8.0\ref\RealState.Repository.dll
+D:\RealEsitate\API\RealState.Repository\bin\Debug\net8.0\RealState.Repository.deps.json
+D:\RealEsitate\API\RealState.Repository\bin\Debug\net8.0\RealState.Repository.runtimeconfig.json
+D:\RealEsitate\API\RealState.Repository\bin\Debug\net8.0\RealState.Repository.dll
+D:\RealEsitate\API\RealState.Repository\bin\Debug\net8.0\RealState.Repository.pdb
+D:\RealEsitate\API\RealState.Repository\bin\Debug\net8.0\RealState.Data.dll
+D:\RealEsitate\API\RealState.Repository\bin\Debug\net8.0\RealState.Data.pdb
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.csproj.AssemblyReference.cache
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.AssemblyInfoInputs.cache
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.AssemblyInfo.cs
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.csproj.CoreCompileInputs.cache
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealStat.7E5EFE90.Up2Date
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.dll
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\refint\RealState.Repository.dll
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.pdb
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\RealState.Repository.genruntimeconfig.cache
+D:\RealEsitate\API\RealState.Repository\obj\Debug\net8.0\ref\RealState.Repository.dll
