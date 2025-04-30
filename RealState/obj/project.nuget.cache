@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v+N1UoKPNiw=",
+  "dgSpecHash": "14ZxJECyY84=",
   "success": true,
-  "projectFilePath": "D:\\RealEsitate\\API\\RealState\\RealState.csproj",
+  "projectFilePath": "D:\\RealEsitate\\Backend\\RealState\\RealState.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

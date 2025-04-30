@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj": {}
+    "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj": {}
   },
   "projects": {
-    "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj": {
+    "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj",
+        "projectUniqueName": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj",
         "projectName": "RealState.Data",
-        "projectPath": "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj",
+        "projectPath": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj",
         "packagesPath": "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\",
-        "outputPath": "D:\\RealEsitate\\API\\RealState.Data\\obj\\",
+        "outputPath": "D:\\RealEsitate\\Backend\\RealState.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pankaj Sadiyal\\AppData\\Roaming\\NuGet\\NuGet.Config",

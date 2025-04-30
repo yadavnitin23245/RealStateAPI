@@ -33,6 +33,11 @@ namespace RealState.Controllers
         {
             try
             {
+                Obj.CreatedDate = DateTime.Now;
+                Obj.IsActive= true;
+                Obj.EmailSend = false;
+               // Obj.opcode = "1";
+
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -52,6 +57,7 @@ namespace RealState.Controllers
                 sb.Append("Username (email): <b>" + Obj.Name + "</b><br>");
                 sb.Append("Email address: <b>" + Obj.Email + "</b><br>");
                 sb.Append("Phone number: <b>" + Obj.PhoneNumber + "</b><br>");
+                sb.Append("Notes: <b>" + Obj.Message + "</b><br>");
                 sb.Append("<br>");
                 sb.Append("Please follow up with the user to assist them further.<br>");
                 sb.Append("<br>");

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZIZhdAojijA=",
+  "dgSpecHash": "ZJ9Nkw+h/+8=",
   "success": true,
-  "projectFilePath": "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj",
+  "projectFilePath": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.4\\microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
     "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.4\\microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",

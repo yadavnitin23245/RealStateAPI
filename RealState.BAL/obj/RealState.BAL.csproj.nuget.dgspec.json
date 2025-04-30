@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RealEsitate\\API\\RealState.BAL\\RealState.BAL.csproj": {}
+    "D:\\RealEsitate\\Backend\\RealState.BAL\\RealState.BAL.csproj": {}
   },
   "projects": {
-    "D:\\RealEsitate\\API\\RealState.BAL\\RealState.BAL.csproj": {
+    "D:\\RealEsitate\\Backend\\RealState.BAL\\RealState.BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RealEsitate\\API\\RealState.BAL\\RealState.BAL.csproj",
+        "projectUniqueName": "D:\\RealEsitate\\Backend\\RealState.BAL\\RealState.BAL.csproj",
         "projectName": "RealState.BAL",
-        "projectPath": "D:\\RealEsitate\\API\\RealState.BAL\\RealState.BAL.csproj",
+        "projectPath": "D:\\RealEsitate\\Backend\\RealState.BAL\\RealState.BAL.csproj",
         "packagesPath": "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\",
-        "outputPath": "D:\\RealEsitate\\API\\RealState.BAL\\obj\\",
+        "outputPath": "D:\\RealEsitate\\Backend\\RealState.BAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pankaj Sadiyal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj": {
-                "projectPath": "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj"
+              "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj": {
+                "projectPath": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj"
               },
-              "D:\\RealEsitate\\API\\RealState.Repository\\RealState.Repository.csproj": {
-                "projectPath": "D:\\RealEsitate\\API\\RealState.Repository\\RealState.Repository.csproj"
+              "D:\\RealEsitate\\Backend\\RealState.Repository\\RealState.Repository.csproj": {
+                "projectPath": "D:\\RealEsitate\\Backend\\RealState.Repository\\RealState.Repository.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj": {
+    "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj",
+        "projectUniqueName": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj",
         "projectName": "RealState.Data",
-        "projectPath": "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj",
+        "projectPath": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj",
         "packagesPath": "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\",
-        "outputPath": "D:\\RealEsitate\\API\\RealState.Data\\obj\\",
+        "outputPath": "D:\\RealEsitate\\Backend\\RealState.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pankaj Sadiyal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -139,14 +139,14 @@
         }
       }
     },
-    "D:\\RealEsitate\\API\\RealState.Repository\\RealState.Repository.csproj": {
+    "D:\\RealEsitate\\Backend\\RealState.Repository\\RealState.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RealEsitate\\API\\RealState.Repository\\RealState.Repository.csproj",
+        "projectUniqueName": "D:\\RealEsitate\\Backend\\RealState.Repository\\RealState.Repository.csproj",
         "projectName": "RealState.Repository",
-        "projectPath": "D:\\RealEsitate\\API\\RealState.Repository\\RealState.Repository.csproj",
+        "projectPath": "D:\\RealEsitate\\Backend\\RealState.Repository\\RealState.Repository.csproj",
         "packagesPath": "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\",
-        "outputPath": "D:\\RealEsitate\\API\\RealState.Repository\\obj\\",
+        "outputPath": "D:\\RealEsitate\\Backend\\RealState.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pankaj Sadiyal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,8 +164,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj": {
-                "projectPath": "D:\\RealEsitate\\API\\RealState.Data\\RealState.Data.csproj"
+              "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj": {
+                "projectPath": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj"
               }
             }
           }

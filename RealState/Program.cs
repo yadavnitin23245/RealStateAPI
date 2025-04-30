@@ -91,6 +91,16 @@ builder.Services.AddSwaggerGen(options =>
 
 builder.Services.AddControllers();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") // <-- Next.js dev server
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 // ? Middleware Pipeline
@@ -103,7 +113,7 @@ if (app.Environment.IsDevelopment())
         options.DefaultModelsExpandDepth(-1); // Hide the models section to focus on the API
     });
 }
-
+app.UseCors("AllowFrontend");
 app.UseHttpsRedirection();
 
 app.UseAuthentication(); // ?? Must be before Authorization

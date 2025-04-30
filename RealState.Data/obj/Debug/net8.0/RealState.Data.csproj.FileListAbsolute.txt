@@ -22,3 +22,16 @@ D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.dll
 D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\refint\RealState.Data.dll
 D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\RealState.Data.pdb
 D:\RealEsitate\API\RealState.Data\obj\Debug\net8.0\ref\RealState.Data.dll
+D:\RealEsitate\Backend\RealState.Data\bin\Debug\net8.0\RealState.Data.deps.json
+D:\RealEsitate\Backend\RealState.Data\bin\Debug\net8.0\RealState.Data.dll
+D:\RealEsitate\Backend\RealState.Data\bin\Debug\net8.0\RealState.Data.pdb
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.csproj.AssemblyReference.cache
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.AssemblyInfoInputs.cache
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.AssemblyInfo.cs
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.csproj.CoreCompileInputs.cache
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.sourcelink.json
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.dll
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\refint\RealState.Data.dll
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\RealState.Data.pdb
+D:\RealEsitate\Backend\RealState.Data\obj\Debug\net8.0\ref\RealState.Data.dll

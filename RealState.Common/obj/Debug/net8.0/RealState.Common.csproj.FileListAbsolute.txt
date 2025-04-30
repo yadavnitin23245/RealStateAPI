@@ -9,3 +9,15 @@ C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState
 C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\refint\RealState.Common.dll
 C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\RealState.Common.pdb
 C:\Users\Pankaj Sadiyal\source\repos\RealState.Common\obj\Debug\net8.0\ref\RealState.Common.dll
+D:\RealEsitate\Backend\RealState.Common\bin\Debug\net8.0\RealState.Common.deps.json
+D:\RealEsitate\Backend\RealState.Common\bin\Debug\net8.0\RealState.Common.dll
+D:\RealEsitate\Backend\RealState.Common\bin\Debug\net8.0\RealState.Common.pdb
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\RealState.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\RealState.Common.AssemblyInfoInputs.cache
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\RealState.Common.AssemblyInfo.cs
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\RealState.Common.csproj.CoreCompileInputs.cache
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\RealState.Common.sourcelink.json
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\RealState.Common.dll
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\refint\RealState.Common.dll
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\RealState.Common.pdb
+D:\RealEsitate\Backend\RealState.Common\obj\Debug\net8.0\ref\RealState.Common.dll

@@ -11,6 +11,6 @@ namespace RealState.BAL.DTO
 
     public class ContactDTO : Contact
     {
-        public string opcode { get; set; }
+       
     }
 }

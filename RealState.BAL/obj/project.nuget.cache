@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zEf2WDSobjQ=",
+  "dgSpecHash": "MPRKzwHgb1o=",
   "success": true,
-  "projectFilePath": "D:\\RealEsitate\\API\\RealState.BAL\\RealState.BAL.csproj",
+  "projectFilePath": "D:\\RealEsitate\\Backend\\RealState.BAL\\RealState.BAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
     "C:\\Users\\Pankaj Sadiyal\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
