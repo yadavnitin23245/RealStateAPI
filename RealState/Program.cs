@@ -95,11 +95,16 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:5173") // <-- Next.js dev server
+        policy.WithOrigins(
+                "https://baljinderkanghomes.myskillwork.com"
+              )
               .AllowAnyMethod()
               .AllowAnyHeader();
+              
     });
 });
+
+
 
 var app = builder.Build();
 
@@ -119,6 +124,13 @@ app.UseHttpsRedirection();
 app.UseAuthentication(); // ?? Must be before Authorization
 app.UseAuthorization();
 
-app.MapControllers();
 
+
+app.UseRouting();
+
+
+
+app.MapControllers();
+app.UseSwagger();
+app.UseSwaggerUI();
 app.Run();

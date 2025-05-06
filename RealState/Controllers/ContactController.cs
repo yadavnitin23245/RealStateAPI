@@ -36,7 +36,8 @@ namespace RealState.Controllers
                 Obj.CreatedDate = DateTime.Now;
                 Obj.IsActive= true;
                 Obj.EmailSend = false;
-               // Obj.opcode = "1";
+               
+                
 
                 if (!ModelState.IsValid)
                 {

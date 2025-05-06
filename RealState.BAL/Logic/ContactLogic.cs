@@ -53,32 +53,6 @@ namespace RealState.BAL.Logic
             }
         }
 
-        //public async Task<List<ContactDTO>> SaveContactDetail(ContactDTO values)
-        //{
-        //    try
-        //    {
-        //        // Map the DTO to the entity model
-        //        Contact contactEntity = MapDTOToModel(values);
-
-        //        // Save to repository
-        //        await _ContactRepository.InsertAsync(contactEntity);
-        //        await _ContactRepository.SaveChangesAsync();
-        //        var id = contactEntity.Id.ToString();
-        //        // Get all contacts from the repository
-        //        var allContacts = await _ContactRepository.GetAsync(Convert.ToInt64(id));
-
-        //        // Map entities back to DTOs
-        //       // var contactDTOs = allContacts.Select(c => MapModelToDTO(c)).ToList();
-
-        //        return contactDTOs;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        throw; // Consider logging the error before re-throwing
-        //    }
-        //}
-
-
         private Contact MapDTOToModel(ContactDTO obj)
         {
             return new Contact()
@@ -91,7 +65,9 @@ namespace RealState.BAL.Logic
                 EmailSend= false,
                 Email = obj.Email,
                 IsActive = obj.IsActive,
-                CreatedDate = obj.CreatedDate
+                CreatedDate = obj.CreatedDate,
+                lastName = obj.lastName,
+                TimeToContact = obj.TimeToContact,
             };
         }
     }

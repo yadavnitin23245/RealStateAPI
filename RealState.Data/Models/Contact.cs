@@ -34,6 +34,13 @@ namespace RealState.Data.Models
 
         public DateTime? UpdatedDate { get; set; }
 
-       
+      
+        public string lastName { get; set; }
+
+        public string TimeToContact { get; set; }
+
+
+
+
     }
 }
