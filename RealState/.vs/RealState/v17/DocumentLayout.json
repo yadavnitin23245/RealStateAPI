@@ -3,8 +3,19 @@
   "WorkspaceRootPath": "D:\\RealEsitate\\Backend\\RealState\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|d:\\realesitate\\backend\\realstate\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0E6AAB-C51B-420E-9E50-AD5E28ED2660}|..\\RealState.BAL\\RealState.BAL.csproj|d:\\realesitate\\backend\\realstate.bal\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|d:\\realesitate\\backend\\realstate\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|d:\\realesitate\\backend\\realstate\\email\\emailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|solutionrelative:email\\emailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7ADB8D34-6BFB-450F-BEF9-1C2A06E34DEB}|..\\RealState.Data\\RealState.Data.csproj|d:\\realesitate\\backend\\realstate.data\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -18,14 +29,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A0E6AAB-C51B-420E-9E50-AD5E28ED2660}|..\\RealState.BAL\\RealState.BAL.csproj|d:\\realesitate\\backend\\realstate.bal\\dto\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|d:\\realesitate\\backend\\realstate\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|d:\\realesitate\\backend\\realstate\\email\\emailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|solutionrelative:email\\emailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{186D222F-8D5C-4EB6-8111-FED8D52776C2}|RealState.csproj|d:\\realesitate\\backend\\realstate\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -68,11 +71,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState.BAL\\DTO\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\RealState.BAL\\DTO\\LoginRequestDTO.cs",
+              "ToolTip": "D:\\RealEsitate\\Backend\\RealState.BAL\\DTO\\LoginRequestDTO.cs",
+              "RelativeToolTip": "..\\RealState.BAL\\DTO\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T05:51:00.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ContactLogic.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState.BAL\\Logic\\ContactLogic.cs",
               "RelativeDocumentMoniker": "..\\RealState.BAL\\Logic\\ContactLogic.cs",
@@ -85,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Contact.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState.Data\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "..\\RealState.Data\\Models\\Contact.cs",
@@ -98,20 +114,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "D:\\RealEsitate\\Backend\\RealState\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBUAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvw8AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T12:03:31.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
@@ -119,11 +135,12 @@
               "RelativeToolTip": "Services\\TokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T12:01:31.268Z"
+              "WhenOpened": "2025-04-29T12:01:31.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AppSettingsDTO.cs",
               "DocumentMoniker": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\DTO\\AppSettingsDTO.cs",
               "ToolTip": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\DTO\\AppSettingsDTO.cs",
@@ -132,32 +149,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "EmailHelper.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState\\Email\\EmailHelper.cs",
               "RelativeDocumentMoniker": "Email\\EmailHelper.cs",
               "ToolTip": "D:\\RealEsitate\\Backend\\RealState\\Email\\EmailHelper.cs",
               "RelativeToolTip": "Email\\EmailHelper.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBkAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:03:23.985Z"
+              "WhenOpened": "2025-04-29T10:03:23.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ContactController.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
               "ToolTip": "D:\\RealEsitate\\Backend\\RealState\\Controllers\\ContactController.cs",
               "RelativeToolTip": "Controllers\\ContactController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAjwCcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T08:41:56.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -170,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -182,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ContactDTO.cs",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState.BAL\\DTO\\ContactDTO.cs",
               "RelativeDocumentMoniker": "..\\RealState.BAL\\DTO\\ContactDTO.cs",
@@ -195,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.Data\\Models\\Users.cs",
               "ToolTip": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.Data\\Models\\Users.cs",
@@ -204,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.Data\\ApplicationDbContext.cs",
@@ -213,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\DTO\\LoginRequestDTO.cs",
               "ToolTip": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\DTO\\LoginRequestDTO.cs",
@@ -222,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\RealEsitate\\Backend\\RealState\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -234,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ContactLogic.cs",
               "DocumentMoniker": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\Logic\\ContactLogic.cs",
               "ToolTip": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\Logic\\ContactLogic.cs",
@@ -243,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ContactDTO.cs",
               "DocumentMoniker": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\DTO\\ContactDTO.cs",
               "ToolTip": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\DTO\\ContactDTO.cs",
@@ -252,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AppException.cs",
               "DocumentMoniker": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\Helpers\\AppException.cs",
               "ToolTip": "C:\\Users\\Pankaj Sadiyal\\source\\repos\\RealState.BAL\\Helpers\\AppException.cs",

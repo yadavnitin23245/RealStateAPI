@@ -23,7 +23,7 @@ namespace RealState.Controllers
         {
             // Replace with password hashing in production
                 var user = _context.Users
-                .FirstOrDefault(u => u.UserName == request.Username && u.Password == request.Password);
+                .FirstOrDefault(u => u.UserName == request.Email && u.Password == request.Password);
 
 
             if (user == null)
