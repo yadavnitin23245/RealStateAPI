@@ -6,9 +6,11 @@ using RealState.Repository.Repository;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static RealState.Common.ENUM.Common;
 
 namespace RealState.BAL.Logic
 {
@@ -18,20 +20,22 @@ namespace RealState.BAL.Logic
         #region Private properties
         private readonly IRepository<ContactDTO> _ContactDTORepository;
 
+        private readonly IRepository<ContactStatDTO> _ContactStatDTORepository;
+
         private readonly IRepository<Contact> _ContactRepository;
         #endregion
 
         #region CTOR's
         public ContactLogic(
 
-              IRepository<ContactDTO> ContactDTORepository, IRepository<Contact> ContactRepository
+              IRepository<ContactDTO> ContactDTORepository, IRepository<Contact> ContactRepository, IRepository<ContactStatDTO> ContactStatDTORepository
 
             )
         {
 
             _ContactDTORepository = ContactDTORepository;
             _ContactRepository = ContactRepository;
-
+            _ContactStatDTORepository = ContactStatDTORepository;
         }
 
         #endregion
@@ -46,6 +50,23 @@ namespace RealState.BAL.Logic
                 await _ContactRepository.InsertAsync(ContactObj);
                 await _ContactRepository.SaveChangesAsync();
                 return ContactObj.Id.ToString();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public List<ContactStatDTO> GetContactStats(string op)
+        {
+            try
+            {
+                string procName = SPROC_Names.UspGetContactStats.ToString();
+                var ParamsArray = new SqlParameter[1];
+                ParamsArray[0] = new SqlParameter() { ParameterName = "@OpCode", Value = "", DbType = System.Data.DbType.String };
+                var resultData = _ContactStatDTORepository.ExecuteWithJsonResult(procName, "ContactStatDTO", ParamsArray);
+
+                return resultData != null ? resultData.ToList() : new List<ContactStatDTO>();
             }
             catch (Exception)
             {

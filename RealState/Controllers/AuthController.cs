@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using RealState.BAL.DTO;
+using RealState.BAL.Helpers;
+using RealState.BAL.ILogic;
 using RealState.Data;
 using RealState.Services;
 using System.Data.Entity;
@@ -13,10 +15,13 @@ namespace RealState.Controllers
     {
         private readonly TokenService _tokenService;
         private readonly ApplicationDbContext _context;
-        public AuthController(TokenService tokenService, ApplicationDbContext context)
+
+        protected IContactLogic _contactLogic { get; private set; }
+        public AuthController(TokenService tokenService, ApplicationDbContext context, IContactLogic contactLogic)
         {
             _tokenService = tokenService;
             _context = context;
+            _contactLogic = contactLogic;
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDTO request)
@@ -59,9 +64,7 @@ namespace RealState.Controllers
             contact.ResponseStatus = true;
             contact.ResponseDate = DateTime.UtcNow;
             contact.ResponseMessage = responseMessage;
-
             _context.SaveChanges();
-
             return Ok(new { message = "Response updated successfully", contact });
         }
 
@@ -76,6 +79,29 @@ namespace RealState.Controllers
                 return NotFound("No contacts found");
 
             return Ok(contactList); // ✅ Just return the list directly
+        }
+
+        [HttpGet]
+        [Route("GetContactStatData")]
+        public IActionResult GetContactStatData()
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var responseObj = _contactLogic.GetContactStats("");
+                if (responseObj == null)
+                    return NotFound();
+                return Ok(responseObj);
+            }
+            catch (AppException ex)
+            {
+
+
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
         }
     }
 }

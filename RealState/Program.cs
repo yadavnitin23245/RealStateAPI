@@ -50,7 +50,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // -------------------- Repositories & Logic Layer --------------------
 builder.Services.AddScoped<IRepository<Contact>, Repository<Contact>>();
 builder.Services.AddScoped<IRepository<Users>, Repository<Users>>();
+builder.Services.AddScoped<IRepository<ContactStatDTO>, Repository<ContactStatDTO>>();
 builder.Services.AddScoped<IRepository<ContactDTO>, Repository<ContactDTO>>();
+
 builder.Services.AddScoped<IRepository<AppSettingsDTO>, Repository<AppSettingsDTO>>();
 builder.Services.AddScoped<IRepository<LoginRequestDTO>, Repository<LoginRequestDTO>>();
 builder.Services.AddTransient<IContactLogic, ContactLogic>();

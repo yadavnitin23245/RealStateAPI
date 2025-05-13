@@ -1202,6 +1202,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "RealState.Common": "1.0.0",
           "RealState.Data": "1.0.0",
           "RealState.Repository": "1.0.0"
         },
@@ -1210,6 +1211,16 @@
         },
         "runtime": {
           "bin/placeholder/RealState.BAL.dll": {}
+        }
+      },
+      "RealState.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/RealState.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RealState.Common.dll": {}
         }
       },
       "RealState.Data/1.0.0": {
@@ -3507,6 +3518,11 @@
       "type": "project",
       "path": "../RealState.BAL/RealState.BAL.csproj",
       "msbuildProject": "../RealState.BAL/RealState.BAL.csproj"
+    },
+    "RealState.Common/1.0.0": {
+      "type": "project",
+      "path": "../RealState.Common/RealState.Common.csproj",
+      "msbuildProject": "../RealState.Common/RealState.Common.csproj"
     },
     "RealState.Data/1.0.0": {
       "type": "project",

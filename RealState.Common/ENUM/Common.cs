@@ -16,5 +16,10 @@ namespace RealState.Common.ENUM
             Failed
         }
 
+        public enum SPROC_Names
+        {
+            UspGetContactStats
+        }
+
     }
 }

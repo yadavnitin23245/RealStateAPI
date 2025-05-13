@@ -13,7 +13,7 @@ namespace RealState.BAL.ILogic
         #region Contact
         Task<string> AddContact(ContactDTO obj);
 
-      //  List<ContactDTO> SaveContactDetail(ContactDTO values);
+        List<ContactStatDTO> GetContactStats(string op);
         #endregion
     }
 }

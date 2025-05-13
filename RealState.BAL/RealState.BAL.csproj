@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RealState.Common\RealState.Common.csproj" />
     <ProjectReference Include="..\RealState.Data\RealState.Data.csproj" />
     <ProjectReference Include="..\RealState.Repository\RealState.Repository.csproj" />
   </ItemGroup>

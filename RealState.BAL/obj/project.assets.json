@@ -550,6 +550,16 @@
           }
         }
       },
+      "RealState.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/RealState.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RealState.Common.dll": {}
+        }
+      },
       "RealState.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1568,6 +1578,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "RealState.Common/1.0.0": {
+      "type": "project",
+      "path": "../RealState.Common/RealState.Common.csproj",
+      "msbuildProject": "../RealState.Common/RealState.Common.csproj"
+    },
     "RealState.Data/1.0.0": {
       "type": "project",
       "path": "../RealState.Data/RealState.Data.csproj",
@@ -1581,6 +1596,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "RealState.Common >= 1.0.0",
       "RealState.Data >= 1.0.0",
       "RealState.Repository >= 1.0.0"
     ]
@@ -1613,6 +1629,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\RealEsitate\\Backend\\RealState.Common\\RealState.Common.csproj": {
+              "projectPath": "D:\\RealEsitate\\Backend\\RealState.Common\\RealState.Common.csproj"
+            },
             "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj": {
               "projectPath": "D:\\RealEsitate\\Backend\\RealState.Data\\RealState.Data.csproj"
             },

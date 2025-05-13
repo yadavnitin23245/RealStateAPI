@@ -752,11 +752,20 @@
       },
       "RealState.BAL/1.0.0": {
         "dependencies": {
+          "RealState.Common": "1.0.0",
           "RealState.Data": "1.0.0",
           "RealState.Repository": "1.0.0"
         },
         "runtime": {
           "RealState.BAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "RealState.Common/1.0.0": {
+        "runtime": {
+          "RealState.Common.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1274,6 +1283,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "RealState.BAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RealState.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

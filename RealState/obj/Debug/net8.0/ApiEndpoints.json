@@ -27,6 +27,16 @@
   },
   {
     "ContainingType": "RealState.Controllers.AuthController",
+    "Method": "GetContactStatData",
+    "RelativePath": "GetContactStatData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealState.Controllers.AuthController",
     "Method": "GetUser",
     "RelativePath": "getUser",
     "HttpMethod": "GET",
