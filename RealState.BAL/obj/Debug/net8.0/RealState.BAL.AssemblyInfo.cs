@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RealState.BAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89789c10083a8a84c57f9b6a7161947037636f5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8639061bbb3bd177052894fd2575feeccd846f31")]
 [assembly: System.Reflection.AssemblyProductAttribute("RealState.BAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RealState.BAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

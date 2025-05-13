@@ -14,13 +14,12 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ? JWT Configuration
+// -------------------- JWT Configuration --------------------
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 var jwtKey = jwtSettings["Key"];
 var jwtIssuer = jwtSettings["Issuer"];
 var jwtAudience = jwtSettings["Audience"];
 
-// ? JWT Authentication
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -42,22 +41,23 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// ? Register DbContext
+builder.Services.AddAuthorization();
+
+// -------------------- DB Context --------------------
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ? Register Repositories and Logic Layer
+// -------------------- Repositories & Logic Layer --------------------
 builder.Services.AddScoped<IRepository<Contact>, Repository<Contact>>();
-builder.Services.AddScoped<IRepository<Users>, Repository<Users>>(); // Make sure to use Users repository
+builder.Services.AddScoped<IRepository<Users>, Repository<Users>>();
 builder.Services.AddScoped<IRepository<ContactDTO>, Repository<ContactDTO>>();
 builder.Services.AddScoped<IRepository<AppSettingsDTO>, Repository<AppSettingsDTO>>();
 builder.Services.AddScoped<IRepository<LoginRequestDTO>, Repository<LoginRequestDTO>>();
 builder.Services.AddTransient<IContactLogic, ContactLogic>();
 
-// ? Token Generator
 builder.Services.AddSingleton<TokenService>();
 
-// ? Add Swagger with JWT Auth support
+// -------------------- Swagger Configuration --------------------
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -70,7 +70,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Enter **JWT token** here without the `Bearer` prefix.\r\nExample: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4i... "
+        Description = "Enter JWT token here without the 'Bearer' prefix."
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -84,7 +84,7 @@ builder.Services.AddSwaggerGen(options =>
                     Id = "Bearer"
                 }
             },
-            new string[] {}
+            Array.Empty<string>()
         }
     });
 });
@@ -95,42 +95,34 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins(
-                "https://baljinderkanghomes.myskillwork.com"
-              )
+        policy.WithOrigins("https://baljinderkanghomes.myskillwork.com")
               .AllowAnyMethod()
               .AllowAnyHeader();
-              
     });
 });
 
-
-
 var app = builder.Build();
 
-// ? Middleware Pipeline
+// -------------------- Middleware Pipeline --------------------
+
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage(); // Optional: Better error info during dev
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        // Optional: If you want to automatically configure Swagger UI to prompt for a token
-        options.DefaultModelsExpandDepth(-1); // Hide the models section to focus on the API
+        options.DefaultModelsExpandDepth(-1);
     });
 }
-app.UseCors("AllowFrontend");
+
 app.UseHttpsRedirection();
+app.UseCors("AllowFrontend");
 
-app.UseAuthentication(); // ?? Must be before Authorization
-app.UseAuthorization();
-
-
-
-app.UseRouting();
-
-
+// ?? FIX: These must be in this order
+app.UseRouting();            // 1. Routing comes first
+app.UseAuthentication();     // 2. Authentication middleware
+app.UseAuthorization();      // 3. Then Authorization middleware
 
 app.MapControllers();
-app.UseSwagger();
-app.UseSwaggerUI();
+
 app.Run();

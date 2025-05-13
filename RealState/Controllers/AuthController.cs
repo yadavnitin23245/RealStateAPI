@@ -24,13 +24,13 @@ namespace RealState.Controllers
             // Replace with password hashing in production
                 var user = _context.Users
                 .FirstOrDefault(u => u.UserName == request.Email && u.Password == request.Password);
-
+           
 
             if (user == null)
                 return Unauthorized("Invalid username or password");
 
             var token = _tokenService.GenerateToken(user.UserName, "Admin");
-            return Ok(new { Token = token });
+            return Ok(new { Token = token ,UserName = user.UserName });
         }
 
         [HttpGet("getUser")]
@@ -46,6 +46,36 @@ namespace RealState.Controllers
                 return Unauthorized("User not found");
 
             return Ok(new { User = user });
+        }
+
+
+        [HttpPost("updateContactResponse")]
+        public IActionResult UpdateContactResponse(int id, string? responseMessage)
+        {
+            var contact = _context.Contact.FirstOrDefault(c => c.Id == id);
+            if (contact == null)
+                return NotFound($"No contact found with ID {id}");
+
+            contact.ResponseStatus = true;
+            contact.ResponseDate = DateTime.UtcNow;
+            contact.ResponseMessage = responseMessage;
+
+            _context.SaveChanges();
+
+            return Ok(new { message = "Response updated successfully", contact });
+        }
+
+
+        // [Authorize]
+        [HttpGet("getContactList")]
+        public IActionResult GetContactList()
+        {
+            var contactList = _context.Contact.ToList();
+
+            if (contactList == null || !contactList.Any())
+                return NotFound("No contacts found");
+
+            return Ok(contactList); // ✅ Just return the list directly
         }
     }
 }

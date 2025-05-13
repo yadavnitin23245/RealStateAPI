@@ -12,15 +12,15 @@ namespace RealState.Data.Models
     {
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
-        public string PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
 
-        public string Subject { get; set; }
+        public string? Subject { get; set; }
 
-        public string Message { get; set; }
+        public string? Message { get; set; }
 
         public bool? EmailSend { get; set; }
 
@@ -35,9 +35,13 @@ namespace RealState.Data.Models
         public DateTime? UpdatedDate { get; set; }
 
       
-        public string lastName { get; set; }
+        public string? lastName { get; set; }
 
-        public string TimeToContact { get; set; }
+        public string? TimeToContact { get; set; }
+
+        public string? ResponseMessage { get; set; }
+        public DateTime? ResponseDate { get; set; }
+        public bool? ResponseStatus { get; set; }
 
 
 
