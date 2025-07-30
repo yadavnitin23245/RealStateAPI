@@ -1,27 +1,25 @@
-# Use the SDK image for build
+# Stage 1 - Build
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
-# Copy only the necessary project files first
+# Copy solution and project files
 COPY RealState/*.sln ./RealState/
-COPY RealState/RealState/*.csproj ./RealState/RealState/
-COPY RealState.RealState.BAL/*.csproj ./RealState.RealState.BAL/
+COPY RealState/*.csproj ./RealState/
+COPY RealState.BAL/*.csproj ./RealState.BAL/
 COPY RealState.Common/*.csproj ./RealState.Common/
 COPY RealState.Data/*.csproj ./RealState.Data/
 COPY RealState.Repository/*.csproj ./RealState.Repository/
 
 # Restore dependencies
-WORKDIR /src/RealState
-RUN dotnet restore
+RUN dotnet restore RealState/RealState.sln
 
 # Copy the rest of the source code
 COPY . .
 
-# Publish the app
-WORKDIR /src/RealState
-RUN dotnet publish -c Release -o /app/publish
+# Build and publish
+RUN dotnet publish RealState/RealState.sln -c Release -o /app/publish
 
-# Build runtime image
+# Stage 2 - Run
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 COPY --from=build /app/publish .
