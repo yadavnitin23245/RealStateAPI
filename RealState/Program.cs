@@ -107,15 +107,21 @@ var app = builder.Build();
 
 // -------------------- Middleware Pipeline --------------------
 
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseDeveloperExceptionPage(); // Optional: Better error info during dev
+//    app.UseSwagger();
+//    app.UseSwaggerUI(options =>
+//    {
+//        options.DefaultModelsExpandDepth(-1);
+//    });
+//}
+
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseDeveloperExceptionPage(); // Optional: Better error info during dev
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.DefaultModelsExpandDepth(-1);
-    });
-}
+    options.DefaultModelsExpandDepth(-1);
+});
 
 app.MapGet("/health", () => Results.Ok("Healthy"));
 
