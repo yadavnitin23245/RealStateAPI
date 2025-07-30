@@ -11,7 +11,6 @@ using RealState.Repository.Repository;
 using RealState.Services;
 using System.Text;
 using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.HttpOverrides; ///30072025
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -118,24 +117,6 @@ var app = builder.Build();
 //    });
 //}
 
-
-// -------------------- Force HTTPS and Redirect to www.bkhome.ca 30072025--------------------
-app.Use(async (context, next) =>
-{
-    var request = context.Request;
-    var host = request.Host.Host;
-    var isHttps = request.IsHttps;
-
-    if (!isHttps || host != "www.bkhome.ca")
-    {
-        var newUrl = $"https://www.bkhome.ca{request.Path}{request.QueryString}";
-        context.Response.Redirect(newUrl, permanent: true);
-        return;
-    }
-
-    await next();
-});
-// -------------------- Force HTTPS and Redirect to www.bkhome.ca end 30072025--------------------
 
 app.UseSwagger();
 app.UseSwaggerUI(options =>
