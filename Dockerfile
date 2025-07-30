@@ -1,25 +1,22 @@
-# Use .NET SDK for build
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+# Use .NET 8 SDK to build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy everything to container
+# Copy everything
 COPY . .
 
-# Go into the RealState folder where the .sln exists
+# Set correct working directory for solution
 WORKDIR /src/RealState
 
-# Restore using the solution file
+# Restore dependencies
 RUN dotnet restore RealState.sln
 
-# Build and publish main web/app project
-# Adjust path if main project is inside /RealState/RealState/
+# Publish main project — adjust if csproj is deeper
 RUN dotnet publish RealState.csproj -c Release -o /app/publish
 
-# Use runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+# Use runtime image for .NET 8
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-
-# Copy published output
 COPY --from=build /app/publish .
 
 ENTRYPOINT ["dotnet", "RealState.dll"]
