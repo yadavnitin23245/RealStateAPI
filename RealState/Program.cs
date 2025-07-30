@@ -118,6 +118,24 @@ var app = builder.Build();
 //}
 
 
+// Middleware to redirect non-www and http requests to https://www.bkhome.ca 7/30/2025
+app.Use(async (context, next) =>
+{
+    var host = context.Request.Host.Host;
+    var isHttps = context.Request.IsHttps;
+    var wwwHost = "www.bkhome.ca";
+ 
+    if (!isHttps || !string.Equals(host, wwwHost, StringComparison.OrdinalIgnoreCase))
+    {
+        var newUrl = $"https://{wwwHost}{context.Request.Path}{context.Request.QueryString}";
+        context.Response.Redirect(newUrl, permanent: true);
+        return;
+    }
+ 
+    await next();
+});
+// Middleware to redirect non-www and http requests to https://www.bkhome.ca 7/30/2025 end .
+
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
