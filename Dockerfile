@@ -1,35 +1,25 @@
-# Stage 1: Build the application
+# Use .NET SDK for build
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
-# Copy solution file to the working directory
-COPY RealState/*.sln ./
-
-# Copy project files
-COPY RealState/*.csproj ./RealState/
-COPY RealState.BAL/*.csproj ./RealState.BAL/
-COPY RealState.Common/*.csproj ./RealState.Common/
-COPY RealState.Data/*.csproj ./RealState.Data/
-COPY RealState.Repository/*.csproj ./RealState.Repository/
-
-# Restore dependencies
-RUN dotnet restore RealState.sln
-
-# Copy the entire source code
+# Copy everything to container
 COPY . .
 
-# Build and publish the application
-RUN dotnet publish RealState/RealState.csproj -c Release -o /app/publish
+# Go into the RealState folder where the .sln exists
+WORKDIR /src/RealState
 
-# Stage 2: Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+# Restore using the solution file
+RUN dotnet restore RealState.sln
+
+# Build and publish main web/app project
+# Adjust path if main project is inside /RealState/RealState/
+RUN dotnet publish RealState.csproj -c Release -o /app/publish
+
+# Use runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 WORKDIR /app
 
-# Copy published output from build stage
+# Copy published output
 COPY --from=build /app/publish .
 
-# Expose port (optional: match your app's launchSettings.json if needed)
-EXPOSE 80
-
-# Run the application
 ENTRYPOINT ["dotnet", "RealState.dll"]
