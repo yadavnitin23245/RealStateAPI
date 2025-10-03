@@ -1,0 +1,12 @@
+D:\RealEsitate\Backend\RealState.Common\bin\Release\net8.0\RealState.Common.deps.json
+D:\RealEsitate\Backend\RealState.Common\bin\Release\net8.0\RealState.Common.dll
+D:\RealEsitate\Backend\RealState.Common\bin\Release\net8.0\RealState.Common.pdb
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\RealState.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\RealState.Common.AssemblyInfoInputs.cache
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\RealState.Common.AssemblyInfo.cs
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\RealState.Common.csproj.CoreCompileInputs.cache
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\RealState.Common.sourcelink.json
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\RealState.Common.dll
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\refint\RealState.Common.dll
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\RealState.Common.pdb
+D:\RealEsitate\Backend\RealState.Common\obj\Release\net8.0\ref\RealState.Common.dll

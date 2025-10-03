@@ -75,8 +75,10 @@ D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.BAL.dll
+D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.Common.dll
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.Data.dll
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.Repository.dll
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.BAL.pdb
+D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.Common.pdb
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.Data.pdb
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\PubTmp\Out\RealState.Repository.pdb

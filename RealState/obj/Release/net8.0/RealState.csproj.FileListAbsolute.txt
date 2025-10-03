@@ -102,3 +102,5 @@ D:\RealEsitate\Backend\RealState\obj\Release\net8.0\refint\RealState.dll
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\RealState.pdb
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\RealState.genruntimeconfig.cache
 D:\RealEsitate\Backend\RealState\obj\Release\net8.0\ref\RealState.dll
+D:\RealEsitate\Backend\RealState\bin\Release\net8.0\RealState.Common.dll
+D:\RealEsitate\Backend\RealState\bin\Release\net8.0\RealState.Common.pdb

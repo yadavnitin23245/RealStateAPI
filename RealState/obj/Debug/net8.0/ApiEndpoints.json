@@ -1,24 +1,8 @@
 [
   {
-    "ContainingType": "RealState.Controllers.ContactController",
-    "Method": "AddContacts",
-    "RelativePath": "AddContacts",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Obj",
-        "Type": "RealState.BAL.DTO.ContactDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "RealState.Controllers.AuthController",
     "Method": "GetContactList",
-    "RelativePath": "getContactList",
+    "RelativePath": "api/Auth/getContactList",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -28,7 +12,7 @@
   {
     "ContainingType": "RealState.Controllers.AuthController",
     "Method": "GetContactStatData",
-    "RelativePath": "GetContactStatData",
+    "RelativePath": "api/Auth/GetContactStatData",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -38,7 +22,7 @@
   {
     "ContainingType": "RealState.Controllers.AuthController",
     "Method": "GetUser",
-    "RelativePath": "getUser",
+    "RelativePath": "api/Auth/getUser",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -48,7 +32,7 @@
   {
     "ContainingType": "RealState.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "login",
+    "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -64,7 +48,7 @@
   {
     "ContainingType": "RealState.Controllers.AuthController",
     "Method": "UpdateContactResponse",
-    "RelativePath": "updateContactResponse",
+    "RelativePath": "api/Auth/updateContactResponse",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -80,6 +64,52 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealState.Controllers.ContactController",
+    "Method": "AddContacts",
+    "RelativePath": "api/Contact/AddContacts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Obj",
+        "Type": "RealState.BAL.DTO.ContactDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealState.Controllers.ContactController",
+    "Method": "GetAllAmortizationfrequency",
+    "RelativePath": "api/Contact/GetAllAmortizationfrequency",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealState.Controllers.ContactController",
+    "Method": "GetAllPaymentFrequrency",
+    "RelativePath": "api/Contact/GetAllPaymentFrequrency",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealState.Controllers.ContactController",
+    "Method": "GetcanadacitiesList",
+    "RelativePath": "api/Contact/GetcanadacitiesList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

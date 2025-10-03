@@ -22,13 +22,19 @@ namespace RealState.BAL.Logic
 
         private readonly IRepository<ContactStatDTO> _ContactStatDTORepository;
 
+        private readonly IRepository<PaymentFrequencyDTO> _PaymentFrequencyDTORepository;
+        private readonly IRepository<AmortizationfrequencyDTO> _AmortizationfrequencyDTORepository;
+
         private readonly IRepository<Contact> _ContactRepository;
+        private readonly IRepository<canadacitiesDTO> _canadacitiesDTORepository;
         #endregion
 
         #region CTOR's
         public ContactLogic(
 
-              IRepository<ContactDTO> ContactDTORepository, IRepository<Contact> ContactRepository, IRepository<ContactStatDTO> ContactStatDTORepository
+              IRepository<ContactDTO> ContactDTORepository, IRepository<Contact> ContactRepository, IRepository<ContactStatDTO> ContactStatDTORepository,
+               IRepository<PaymentFrequencyDTO> PaymentFrequencyDTORepository, IRepository<AmortizationfrequencyDTO> AmortizationfrequencyDTORepository,
+               IRepository<canadacitiesDTO> canadacitiesDTORepository
 
             )
         {
@@ -36,6 +42,9 @@ namespace RealState.BAL.Logic
             _ContactDTORepository = ContactDTORepository;
             _ContactRepository = ContactRepository;
             _ContactStatDTORepository = ContactStatDTORepository;
+            _PaymentFrequencyDTORepository = PaymentFrequencyDTORepository;
+            _AmortizationfrequencyDTORepository = AmortizationfrequencyDTORepository;
+            _canadacitiesDTORepository = canadacitiesDTORepository;
         }
 
         #endregion
@@ -67,6 +76,57 @@ namespace RealState.BAL.Logic
                 var resultData = _ContactStatDTORepository.ExecuteWithJsonResult(procName, "ContactStatDTO", ParamsArray);
 
                 return resultData != null ? resultData.ToList() : new List<ContactStatDTO>();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public List<AmortizationfrequencyDTO> GetAmortizationfrequency(string op)
+        {
+            try
+            {
+                string procName = SPROC_Names.UspGetAmortizationfrequency.ToString();
+                var ParamsArray = new SqlParameter[1];
+                ParamsArray[0] = new SqlParameter() { ParameterName = "@OpCode", Value = "", DbType = System.Data.DbType.String };
+                var resultData = _AmortizationfrequencyDTORepository.ExecuteWithJsonResult(procName, "AmortizationfrequencyDTO", ParamsArray);
+
+                return resultData != null ? resultData.ToList() : new List<AmortizationfrequencyDTO>();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public List<canadacitiesDTO> Getcanadacities(string op)
+        {
+            try
+            {
+                string procName = SPROC_Names.UspGetcanadacities.ToString();
+                var ParamsArray = new SqlParameter[1];
+                ParamsArray[0] = new SqlParameter() { ParameterName = "@OpCode", Value = "", DbType = System.Data.DbType.String };
+                var resultData = _canadacitiesDTORepository.ExecuteWithJsonResult(procName, "canadacitiesDTO", ParamsArray);
+
+                return resultData != null ? resultData.ToList() : new List<canadacitiesDTO>();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public List<PaymentFrequencyDTO> GetPaymentFrequrency(string op)
+        {
+            try
+            {
+                string procName = SPROC_Names.UspGetPaymentFrequrency.ToString();
+                var ParamsArray = new SqlParameter[1];
+                ParamsArray[0] = new SqlParameter() { ParameterName = "@OpCode", Value = "", DbType = System.Data.DbType.String };
+                var resultData = _PaymentFrequencyDTORepository.ExecuteWithJsonResult(procName, "PaymentFrequencyDTO", ParamsArray);
+
+                return resultData != null ? resultData.ToList() : new List<PaymentFrequencyDTO>();
             }
             catch (Exception)
             {

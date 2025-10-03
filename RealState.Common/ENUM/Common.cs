@@ -18,7 +18,10 @@ namespace RealState.Common.ENUM
 
         public enum SPROC_Names
         {
-            UspGetContactStats
+            UspGetContactStats,
+            UspGetAmortizationfrequency,
+            UspGetPaymentFrequrency,
+            UspGetcanadacities
         }
 
     }

@@ -14,6 +14,11 @@ namespace RealState.BAL.ILogic
         Task<string> AddContact(ContactDTO obj);
 
         List<ContactStatDTO> GetContactStats(string op);
+
+        List<PaymentFrequencyDTO> GetPaymentFrequrency(string op);
+
+        List<AmortizationfrequencyDTO> GetAmortizationfrequency(string op);
+        List<canadacitiesDTO> Getcanadacities(string op);
         #endregion
     }
 }

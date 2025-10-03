@@ -2,30 +2,109 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RealState.BAL.DTO;
 using RealState.BAL.Helpers;
 using RealState.BAL.ILogic;
+using RealState.BAL.Logic;
 using RealState.Email;
 using RealState.Repository.Repository;
 using System.Text;
 
 namespace RealState.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")] // This matters
     public class ContactController : Controller
     {
+        private static readonly HttpClient client = new HttpClient();
         protected IContactLogic _ContactLogicBAL { get; private set; }
         private readonly IOptions<AppSettingsDTO> _appSettings;
+        private readonly ILogger<ContactController> _logger; // Logger instance
+
         #region CTOR's
 
-        public ContactController(IContactLogic ContactLogicBAL, IOptions<AppSettingsDTO> appSettings
-        )
-
+        public ContactController(IContactLogic ContactLogicBAL, IOptions<AppSettingsDTO> appSettings, ILogger<ContactController> logger)
         {
             _ContactLogicBAL = ContactLogicBAL;
             _appSettings = appSettings;
-
+            _logger = logger; // Initialize logger
         }
+
         #endregion
+
+        [HttpGet]
+        [Route("GetAllPaymentFrequrency")]
+        public IActionResult GetAllPaymentFrequrency()
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var responseObj = _ContactLogicBAL.GetPaymentFrequrency("");
+                if (responseObj == null)
+                    return NotFound();
+
+                return Ok(responseObj);
+            }
+            catch (AppException ex)
+            {
+                _logger.LogError(ex, "An error occurred in GetAllPaymentFrequrency.");
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetcanadacitiesList")]
+        public IActionResult GetcanadacitiesList()
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var responseObj = _ContactLogicBAL.Getcanadacities("");
+                if (responseObj == null)
+                    return NotFound();
+
+                return Ok(responseObj);
+            }
+            catch (AppException ex)
+            {
+                _logger.LogError(ex, "An error occurred in GetcanadacitiesList.");
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllAmortizationfrequency")]
+        public IActionResult GetAllAmortizationfrequency()
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var responseObj = _ContactLogicBAL.GetAmortizationfrequency("");
+                if (responseObj == null)
+                    return NotFound();
+
+                return Ok(responseObj);
+            }
+            catch (AppException ex)
+            {
+                _logger.LogError(ex, "An error occurred in GetAllAmortizationfrequency.");
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
+        }
 
         [HttpPost]
         [Route("AddContacts")]
@@ -33,49 +112,23 @@ namespace RealState.Controllers
         {
             try
             {
-                Obj.CreatedDate = DateTime.Now;
-                Obj.IsActive= true;
-                Obj.EmailSend = false;
-                Obj.ResponseStatus = false;
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
                 }
+
                 var responseObj = await _ContactLogicBAL.AddContact(Obj);
                 if (string.IsNullOrEmpty(responseObj))
                 {
                     return NotFound();
                 }
-
-                var sb = new StringBuilder();
-                sb.Append("Dear Support Team,<br>");
-                sb.Append("<br>");
-                sb.Append("A user has submitted a request through the Contact Us page regarding account access.<br>");
-                sb.Append("Below are the user's details:<br>");
-                sb.Append("<br>");
-                sb.Append("Username (email): <b>" + Obj.Name + "</b><br>");
-                sb.Append("Email address: <b>" + Obj.Email + "</b><br>");
-                sb.Append("Phone number: <b>" + Obj.PhoneNumber + "</b><br>");
-                sb.Append("Notes: <b>" + Obj.Message + "</b><br>");
-                sb.Append("<br>");
-                sb.Append("Please follow up with the user to assist them further.<br>");
-                sb.Append("<br>");
-                sb.Append("Regards,<br>");
-                sb.Append("Pankaj Sadyal<br>");
-                sb.Append("<br>");
-                string emailBody = sb.ToString();
-                bool emailResponse;
-                EmailHelper emailHelper = new EmailHelper(_appSettings);
-                emailResponse = emailHelper.SendEmailVerifyRequest("pankaj.sadiyal@spadezgroup.com", emailBody, "Contact Qurey");
-
                 return Ok(responseObj);
             }
             catch (AppException ex)
             {
+                _logger.LogError(ex, "An error occurred in AddContacts.");
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError);
             }
         }
-
-
     }
 }

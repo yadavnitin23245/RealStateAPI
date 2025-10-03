@@ -10,7 +10,8 @@ using System.Data.Entity;
 
 namespace RealState.Controllers
 {
-   
+    [ApiController]
+    [Route("api/[controller]")] // This matters
     public class AuthController : Controller
     {
         private readonly TokenService _tokenService;
@@ -73,7 +74,9 @@ namespace RealState.Controllers
         [HttpGet("getContactList")]
         public IActionResult GetContactList()
         {
-            var contactList = _context.Contact.ToList();
+            var contactList = _context.Contact
+         .OrderByDescending(c => c.CreatedDate)
+         .ToList();
 
             if (contactList == null || !contactList.Any())
                 return NotFound("No contacts found");
